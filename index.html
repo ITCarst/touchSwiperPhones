@@ -192,7 +192,8 @@ function touchSwiper() {
     };
     //modern slider based on overflow scroll for newer ios versions
     that.touchSwiperModern = function() {
-        configs.coverFlowElement = document.getElementsByClassName(configs.boxGames), x, len;
+        configs.coverFlowElement = document.getElementsByClassName(configs.boxGames)
+        var x, len;
         for ( x = 0, len = configs.coverFlowElement.length; x < len; x++ ) {
             configs.coverFlowElement[x].style.webkitOverflowScrolling = 'touch';
             configs.coverFlowElement[x].style.overflowX = 'scroll';
